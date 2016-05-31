@@ -3,55 +3,41 @@
 <head>
     <meta charset="utf-8"/>
     <title>Michiel Appelman</title>
-    <style>
-        html, body {
-            height: 100%;
-        }
-        body {
-            margin: 0;
-        }
-        .flex-container {
-            height: 100%;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            -webkit-flex-wrap: nowrap;
-            -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-            -webkit-justify-content: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-align-content: center;
-            -ms-flex-line-pack: center;
-            align-content: center;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-        }
-        .flex-item {
-            -webkit-order: 0;
-            -ms-flex-order: 0;
-            order: 0;
-            -webkit-flex: 0 1 auto;
-            -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-            -webkit-align-self: auto;
-            -ms-flex-item-align: auto;
-            align-self: auto;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
-<div class='flex-container'>
-    <div class='flex-item'>
-        <div class='name'>Michiel Appelman</div>
-        <div class='positions'>
-            Currently: Systems Engineer @ Cisco Systems
-            Previously: Network Engineer @ AMS-IX
+<div class='center-container'>
+    <div class='center-item'>
+    <div class='tworow-container'>
+        <div class='tworow-item'>
+        <div class='inner-container'>
+            <div class='inner-item'>
+                <span id='name'>Michiel Appelman</span>
+                <dl>
+                    <dt>Currently</dt>
+                    <dd>Systems Engineer @ <a href='https://www.cisco.com/'>Cisco Systems</a></dd>
+                    <dt>Previously</dt>
+                    <dd>Network Engineer @ <a href='https://ams-ix.net/'>AMS-IX</a></dd>
+                    <dt>Education</dt>
+                    <dd>MSc Systems &amp; Network Engineer @ <a href="https://www.os3.nl">UvA</a></dd>
+                    <dd>BASc Network Infrastructure Design @ <a href="http://www.zuyd.nl/">Hogeschool Zuyd</a></dd>
+                </dl>
+            </div>
+            <div class='photo'>
+                <img src="pic-Michiel_Appelman.jpg" alt="Michiel Appelman Mugshot" height='256px'/>
+            </div>
         </div>
+        </div>
+        <div class='tworow-item contact-footer'>
+            <span id='icons'>
+            <a href="mailto:michiel@appelman.se"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://github.com/michielappelman"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://nl.linkedin.com/in/michielappelman"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com/michielappelman"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </span>
+        </div>
+    </div>
     </div>
 </div>
 </body>
